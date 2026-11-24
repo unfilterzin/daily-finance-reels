@@ -1,0 +1,98 @@
+name: Daily Finance Reel & Carousel Publisher
+
+on:
+  schedule:
+    # Runs daily at 09:00 AM IST (03:30 UTC)
+    - cron: "30 3 * * *"
+  workflow_dispatch: # Allows manual 1-click run from GitHub Actions tab
+
+permissions:
+  contents: write # Needed to commit updated finance_topics_10_to_80.json & upload release assets
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg and Python dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+
+      - name: Pick format (alternates 7-slide Carousel & slow Reel)
+        id: mode
+        run: |
+          if (( ${{ github.run_number }} % 2 == 1 )); then
+            echo "format=carousel" >> "$GITHUB_OUTPUT"
+          else
+            echo "format=reel" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate media (Dry Run)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python insta_reel_automator.py --format "${{ steps.mode.outputs.format }}" --style auto --dry-run
+
+      - name: Upload generated media to GitHub Release (Free Public HTTPS)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="post-${{ github.run_number }}"
+          gh release create "$TAG" generated_reels/* \
+            --title "Automated Post ${{ github.run_number }} (${{ steps.mode.outputs.format }})" \
+            --notes "Auto-generated daily finance ${{ steps.mode.outputs.format }}"
+
+      - name: Publish to Instagram via Meta Graph API
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          PUBLIC_VIDEO_BASE_URL: "https://github.com/${{ github.repository }}/releases/download/post-${{ github.run_number }}"
+        run: |
+          sleep 10
+          python -c "
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import insta_reel_automator as app
+
+          topics = json.loads(Path('finance_topics_10_to_80.json').read_text(encoding='utf-8'))
+          selected = next((t for t in topics if not t.get('posted')), None)
+          if not selected:
+              print('All topics posted!')
+              raise SystemExit(0)
+
+          fmt = '${{ steps.mode.outputs.format }}'
+          base_url = 'https://github.com/${{ github.repository }}/releases/download/post-${{ github.run_number }}'
+          caption = app.build_caption(selected)
+
+          if fmt == 'carousel':
+              slides = sorted(Path('generated_reels').glob('carousel_*.jpg'))
+              urls = [f'{base_url}/{s.name}' for s in slides]
+              media_id = app.publish_carousel_to_instagram(urls, caption)
+          else:
+              mp4 = next(Path('generated_reels').glob('reel_*.mp4'))
+              media_id = app.publish_reel_to_instagram(f'{base_url}/{mp4.name}', caption)
+
+          selected['posted'] = True
+          selected['posted_at'] = datetime.now(timezone.utc).isoformat()
+          selected['ig_media_id'] = media_id
+          selected['format'] = fmt
+          Path('finance_topics_10_to_80.json').write_text(json.dumps(topics, indent=2, ensure_ascii=False), encoding='utf-8')
+          "
+
+      - name: Commit updated topic status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add finance_topics_10_to_80.json
+          git diff --staged --quiet || git commit -m "Mark post #${{ github.run_number }} (${{ steps.mode.outputs.format }}) as posted"
+          git push
