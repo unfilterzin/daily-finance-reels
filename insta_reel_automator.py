@@ -237,11 +237,13 @@ def publish_reel_to_instagram(video_url: str, caption: str) -> str:
         data={"media_type": "REELS", "video_url": video_url, "caption": caption, "share_to_feed": "true", "access_token": IG_ACCESS_TOKEN},
         timeout=30,
     )
-    resp.raise_for_status()
+    if not resp.ok: print("META API ERROR:", resp.status_code, resp.text)
+     resp.raise_for_status()
     cid = resp.json()["id"]
     _poll_container(cid)
     pub = requests.post(f"{base_url}/{IG_USER_ID}/media_publish", data={"creation_id": cid, "access_token": IG_ACCESS_TOKEN}, timeout=30)
-    pub.raise_for_status()
+    if not pub.ok: print("META API ERROR:", pub.status_code, pub.text)
+      pub.raise_for_status()
     return pub.json()["id"]
 
 
@@ -252,15 +254,18 @@ def publish_carousel_to_instagram(image_urls: list[str], caption: str) -> str:
     child_ids = []
     for url in image_urls:
         c = requests.post(f"{base_url}/{IG_USER_ID}/media", data={"image_url": url, "is_carousel_item": "true", "access_token": IG_ACCESS_TOKEN}, timeout=30)
-        c.raise_for_status()
+        if not c.ok: print("META API ERROR:", c.status_code, c.text)
+        c.raise_for_status()   
         child_ids.append(c.json()["id"])
 
     parent = requests.post(f"{base_url}/{IG_USER_ID}/media", data={"media_type": "CAROUSEL", "children": ",".join(child_ids), "caption": caption, "access_token": IG_ACCESS_TOKEN}, timeout=30)
-    parent.raise_for_status()
+    if not parent.ok: print("META API ERROR:", parent.status_code, parent.text)
+      parent.raise_for_status()
     pid = parent.json()["id"]
     _poll_container(pid)
     pub = requests.post(f"{base_url}/{IG_USER_ID}/media_publish", data={"creation_id": pid, "access_token": IG_ACCESS_TOKEN}, timeout=30)
-    pub.raise_for_status()
+    if not pub.ok: print("META API ERROR:", pub.status_code, pub.text)
+      pub.raise_for_status()
     return pub.json()["id"]
 
 
