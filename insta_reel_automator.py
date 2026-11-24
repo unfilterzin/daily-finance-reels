@@ -238,12 +238,12 @@ def publish_reel_to_instagram(video_url: str, caption: str) -> str:
         timeout=30,
     )
     if not resp.ok: print("META API ERROR:", resp.status_code, resp.text)
-     resp.raise_for_status()
+    resp.raise_for_status()
     cid = resp.json()["id"]
     _poll_container(cid)
     pub = requests.post(f"{base_url}/{IG_USER_ID}/media_publish", data={"creation_id": cid, "access_token": IG_ACCESS_TOKEN}, timeout=30)
     if not pub.ok: print("META API ERROR:", pub.status_code, pub.text)
-      pub.raise_for_status()
+    pub.raise_for_status()
     return pub.json()["id"]
 
 
@@ -260,12 +260,12 @@ def publish_carousel_to_instagram(image_urls: list[str], caption: str) -> str:
 
     parent = requests.post(f"{base_url}/{IG_USER_ID}/media", data={"media_type": "CAROUSEL", "children": ",".join(child_ids), "caption": caption, "access_token": IG_ACCESS_TOKEN}, timeout=30)
     if not parent.ok: print("META API ERROR:", parent.status_code, parent.text)
-      parent.raise_for_status()
+    parent.raise_for_status()
     pid = parent.json()["id"]
     _poll_container(pid)
     pub = requests.post(f"{base_url}/{IG_USER_ID}/media_publish", data={"creation_id": pid, "access_token": IG_ACCESS_TOKEN}, timeout=30)
     if not pub.ok: print("META API ERROR:", pub.status_code, pub.text)
-      pub.raise_for_status()
+    pub.raise_for_status()
     return pub.json()["id"]
 
 
