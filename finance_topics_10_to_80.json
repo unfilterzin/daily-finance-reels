@@ -1,0 +1,394 @@
+[
+  {
+    "id": 1,
+    "age_group": "10-15",
+    "title": "The 3-Jar Magic for Pocket Money",
+    "hook": "Got pocket money? Let's give every single coin a fun job using 3 jars!",
+    "points": [
+      "Jar 1 is for Fun: Buy stickers, ice cream, or small treats today without feeling bad.",
+      "Jar 2 is for Big Dreams: Save up for that cool bicycle, art kit, or headphones.",
+      "Jar 3 is for Kindness: Buy a surprise gift for Mom or help a friend in need."
+    ],
+    "cta": "Follow along to learn money magic for every age!",
+    "hashtags": "#MoneyMadeEasy #KidsFinance #PiggyBank #PocketMoney #SmartGirls",
+    "posted": false
+  },
+  {
+    "id": 2,
+    "age_group": "10-15",
+    "title": "Needs vs. Wants at the Toy Store",
+    "hook": "Want to know a secret superpower before you buy something shiny?",
+    "points": [
+      "Needs are things that keep you strong and learning—like healthy food and school shoes.",
+      "Wants are extra sparkles—like a tenth hair clip or a new game outfit.",
+      "Wait two whole sleeps before buying a 'want'—half the time you'll forget you wanted it!"
+    ],
+    "cta": "Save this trick for your next shopping trip!",
+    "hashtags": "#SmartShopping #NeedsVsWants #MoneyHabits #KidsTips",
+    "posted": false
+  },
+  {
+    "id": 3,
+    "age_group": "10-15",
+    "title": "Money That Grows Like a Mango Tree",
+    "hook": "What if your saved money could earn its own pocket money while you sleep?",
+    "points": [
+      "Imagine planting one rupee like a tiny seed in a safe savings garden.",
+      "Next year, that seed grows extra coins—and then those new coins grow even MORE coins!",
+      "Starting early means time does all the hard work for you."
+    ],
+    "cta": "Share this with your sister or best friend!",
+    "hashtags": "#CompoundInterest #MoneyTree #StartEarly #SimpleFinance",
+    "posted": false
+  },
+  {
+    "id": 4,
+    "age_group": "10-15",
+    "title": "The Sneaky Game-Coin Trap",
+    "hook": "That tiny 99-rupee game outfit looks harmless—until you count them all up!",
+    "points": [
+      "Buying a tiny treat twice a week adds up to a giant mountain of money in one year.",
+      "Game coins disappear when you get bored of the game, but real savings stay yours.",
+      "Pick one small 'fun limit' each month so your real-world dreams stay safe."
+    ],
+    "cta": "Comment what big dream you're saving for right now!",
+    "hashtags": "#GamingBudget #SmartChoices #PocketMoney #MoneyTips",
+    "posted": false
+  },
+  {
+    "id": 5,
+    "age_group": "16-22",
+    "title": "Sharing Snacks Without Losing Track",
+    "hook": "Going out for pizza with friends shouldn't leave your wallet completely empty!",
+    "points": [
+      "Decide how much you want to spend BEFORE you walk into the cafe.",
+      "Split the bill right away so nobody forgets who owes whom.",
+      "Picnics in the park or movie nights at home can be just as fun—and way cheaper!"
+    ],
+    "cta": "Tag a friend you love hanging out with!",
+    "hashtags": "#FriendHangouts #SmartBudget #TeenFinance #MoneyMadeSimple",
+    "posted": false
+  },
+  {
+    "id": 6,
+    "age_group": "16-22",
+    "title": "Your Own Coins vs. Borrowed Coins",
+    "hook": "A credit card isn't magic free money—it's a loan that asks for extra coins back!",
+    "points": [
+      "A debit card uses money already sitting in your piggy bank.",
+      "A credit card borrows money—and if you're late paying it back, it charges a huge penalty.",
+      "Only swipe what you already have saved, and pay the whole bill on time!"
+    ],
+    "cta": "Follow for easy money rules from age 10 to 80!",
+    "hashtags": "#DebitVsCredit #SmartSpending #YoungAdults #MoneyBasics",
+    "posted": false
+  },
+  {
+    "id": 7,
+    "age_group": "16-22",
+    "title": "The 50-30-20 Pizza Slice Budget",
+    "hook": "Ever wonder where all your allowance went before the month even ended?",
+    "points": [
+      "Cut your money like a pizza: half (50%) goes to must-haves like food and bus rides.",
+      "Three slices (30%) go to fun—movies, books, and hanging out with friends.",
+      "Two slices (20%) go straight into your savings jar on Day 1!"
+    ],
+    "cta": "Save this pizza trick and try it next month!",
+    "hashtags": "#503020Rule #EasyBudget #CollegeLife #MoneyHabits",
+    "posted": false
+  },
+  {
+    "id": 8,
+    "age_group": "16-22",
+    "title": "Don't Fall for 'Pay Later' Promises",
+    "hook": "'Buy it today, pay tiny bits later!' sounds sweet—but here's the hidden catch.",
+    "points": [
+      "Paying in tiny pieces tricks your brain into buying things that are too expensive.",
+      "If you miss even one tiny payment, late fees pile up fast.",
+      "Easy rule: if you can't pay for it twice right now, wait and save up!"
+    ],
+    "cta": "Follow for simple daily money wisdom!",
+    "hashtags": "#SmartShopping #NoDebt #MoneyRules #SimpleFinance",
+    "posted": false
+  },
+  {
+    "id": 9,
+    "age_group": "23-30",
+    "title": "What to Do with Your First Grown-Up Paycheck",
+    "hook": "Got your very first job paycheck? Yay! Do these 3 easy things before you shop.",
+    "points": [
+      "Hide 20% in a separate savings jar right away so you don't accidentally spend it.",
+      "Get your own health shield (insurance) just in case you ever catch a big cold or need a doctor.",
+      "Buy yourself one special celebration treat—you earned it!"
+    ],
+    "cta": "Share this with someone starting their first job!",
+    "hashtags": "#FirstPaycheck #MoneyMagic #20sFinance #SmartStart",
+    "posted": false
+  },
+  {
+    "id": 10,
+    "age_group": "23-30",
+    "title": "Your Sunny-Day Umbrella Fund",
+    "hook": "Why do smart grown-ups keep an umbrella in their bag even when the sky is blue?",
+    "points": [
+      "An emergency fund is your money umbrella for surprise rain—like a broken laptop or sudden trip.",
+      "Try saving enough to cover 6 months of food, rent, and basic bills.",
+      "Keep it in a safe, easy-to-reach bank account so you can grab it anytime!"
+    ],
+    "cta": "Follow to learn money lessons for every age!",
+    "hashtags": "#EmergencyFund #RainyDayFund #SafeMoney #SimpleFinance",
+    "posted": false
+  },
+  {
+    "id": 11,
+    "age_group": "23-30",
+    "title": "Don't Let Your Wallet Leak When You Get a Raise",
+    "hook": "Earning more money at work, yet your piggy bank is still empty at month-end?",
+    "points": [
+      "When we earn more, it's tempting to buy pricier coffee, clothes, and gadgets every week.",
+      "Next time you get a raise, put half of the extra money straight into savings.",
+      "Looking fancy costs lots of coins; having savings buys real freedom!"
+    ],
+    "cta": "Save this reminder for your next raise!",
+    "hashtags": "#SaveMore #SmartLiving #MoneyMindset #20sTips",
+    "posted": false
+  },
+  {
+    "id": 12,
+    "age_group": "23-30",
+    "title": "Why Starting at 25 Beats Waiting Until 35",
+    "hook": "Starting your money garden 10 years earlier is like having a magic head start!",
+    "points": [
+      "Planting small amounts every month at age 25 grows way bigger than planting huge amounts at 35.",
+      "You don't need to be rich to start—just steady, like watering a plant every week.",
+      "Set up an automatic monthly transfer so your money grows while you're busy living life."
+    ],
+    "cta": "Follow for daily finance made super simple!",
+    "hashtags": "#StartEarly #MoneyGarden #Compounding #SmartInvesting",
+    "posted": false
+  },
+  {
+    "id": 13,
+    "age_group": "31-45",
+    "title": "The Shiny New Car Secret",
+    "hook": "A brand-new car loses value the moment you drive it out of the showroom!",
+    "points": [
+      "Just like a new toy loses its shiny sticker price once opened, a new car drops 15% in value on Day 1.",
+      "A gently used 2-year-old car takes you to the exact same places for way less money.",
+      "Put the money you saved into your family's dream vacation or savings jar!"
+    ],
+    "cta": "Would you pick a new car or save the extra cash?",
+    "hashtags": "#SmartBuying #CarTips #FamilyMoney #SimpleFinance",
+    "posted": false
+  },
+  {
+    "id": 14,
+    "age_group": "31-45",
+    "title": "Building a Safety Net for People You Love",
+    "hook": "If your family counts on your paycheck, insurance is like a warm safety blanket.",
+    "points": [
+      "Term insurance promises your family will still be cared for even if something happens to you.",
+      "Health insurance pays big hospital bills so your family's savings jar stays untouched.",
+      "Keep insurance simple and separate from your savings investments."
+    ],
+    "cta": "Save this checklist for your family!",
+    "hashtags": "#FamilyFirst #InsuranceMadeEasy #SafeFuture #MoneyCare",
+    "posted": false
+  },
+  {
+    "id": 15,
+    "age_group": "31-45",
+    "title": "Two Fun Ways to Clear Out Old Debts",
+    "hook": "Have too many borrowed bills to pay back? Pick one of these two simple games!",
+    "points": [
+      "Game 1 (Snowball): Pay off your tiniest bill first—it feels awesome to cross one off the list!",
+      "Game 2 (Avalanche): Pay off the bill with the biggest late-fee penalty first to save more coins.",
+      "Pick whichever game keeps you smiling and sticking to the plan!"
+    ],
+    "cta": "Follow for stress-free money tips!",
+    "hashtags": "#DebtFree #MoneyGames #SimpleSteps #PersonalFinance",
+    "posted": false
+  },
+  {
+    "id": 16,
+    "age_group": "31-45",
+    "title": "Teaching Kids About Money at the Grocery Store",
+    "hook": "You don't need a boring textbook to teach kids how money works—just take them shopping!",
+    "points": [
+      "Let them compare two cereal boxes to see which one gives more for fewer coins.",
+      "Give them a small snack budget and let them choose how to spend it.",
+      "Talk out loud about saving for family trips so they learn planning is fun!"
+    ],
+    "cta": "Share this with a parent who'd love it!",
+    "hashtags": "#KidsAndMoney #ParentingTips #GroceryMath #FinancialLiteracy",
+    "posted": false
+  },
+  {
+    "id": 17,
+    "age_group": "46-60",
+    "title": "Turbo-Charging Your Savings in Your 50s",
+    "hook": "In your 50s and worried you started saving late? Here's your secret superpower!",
+    "points": [
+      "As big family expenses wrap up, you finally have extra coins left over each month.",
+      "Drop every work bonus straight into your cozy retirement basket.",
+      "Try to finish paying off your house before you stop working so life feels super light."
+    ],
+    "cta": "Follow for simple money tips at every age!",
+    "hashtags": "#50sFinance #RetirementPrep #CatchUpSavings #MoneyMadeEasy",
+    "posted": false
+  },
+  {
+    "id": 18,
+    "age_group": "46-60",
+    "title": "Put on Your Own Oxygen Mask First",
+    "hook": "Parents love giving everything to their kids—but don't empty your own retirement jar!",
+    "points": [
+      "Students can use scholarships or student loans for college, just like getting a library book.",
+      "Nobody gives out loans for retirement—your future self needs that savings jar.",
+      "Taking care of your own future is the best gift you can ever give your kids!"
+    ],
+    "cta": "Save this gentle reminder!",
+    "hashtags": "#ParentFinance #RetirementFirst #SmartChoices #FamilyLove",
+    "posted": false
+  },
+  {
+    "id": 19,
+    "age_group": "46-60",
+    "title": "Keeping Your Coins Safe Before Retirement",
+    "hook": "Right before you stop working, it's time to move some eggs into a safer basket!",
+    "points": [
+      "Keep 3 to 5 years of everyday living money in super-safe accounts that don't bounce up and down.",
+      "Leave the rest growing gently so your money keeps up with rising prices.",
+      "Check your baskets once a year—never panic when the market has a bumpy day."
+    ],
+    "cta": "Follow for our 10-to-80 money series!",
+    "hashtags": "#SafeSavings #PreRetirement #MoneyBaskets #SimpleFinance",
+    "posted": false
+  },
+  {
+    "id": 20,
+    "age_group": "46-60",
+    "title": "Hunting Down Sneaky Monthly Subscriptions",
+    "hook": "Did you know tiny forgotten apps might be nibbling at your bank account every month?",
+    "points": [
+      "Look at your last 3 bank statements like a detective searching for clues.",
+      "Cancel any TV channel, app, or club membership you haven't touched in 30 days.",
+      "Move all those rescued coins straight into your dream-vacation jar!"
+    ],
+    "cta": "Comment how many forgotten apps you found last time!",
+    "hashtags": "#MoneyDetective #SaveMoney #HouseholdTips #SmartLiving",
+    "posted": false
+  },
+  {
+    "id": 21,
+    "age_group": "61-70",
+    "title": "Paying Yourself a Monthly Allowance at 65",
+    "hook": "Retired and wondering how much you can spend without ever running out? Use the 4% rule!",
+    "points": [
+      "Imagine your retirement savings is a big apple orchard.",
+      "Each year, pick just 4 apples out of every 100 so the trees keep growing new ones forever.",
+      "Keep 2 years of spending cash handy so you never have to worry about bumpy market days."
+    ],
+    "cta": "Save this orchard trick for later!",
+    "hashtags": "#4PercentRule #RetirementJoy #60sFinance #SimpleMoney",
+    "posted": false
+  },
+  {
+    "id": 22,
+    "age_group": "61-70",
+    "title": "Keeping a Special Jar for Doctor Visits",
+    "hook": "Doctor visits and medicines get pricier every year—let's keep a cozy shield ready!",
+    "points": [
+      "Keep your senior health insurance active so big hospital bills are always covered.",
+      "Set aside a small 'health jar' just for regular checkups and vitamins.",
+      "Staying healthy with daily walks saves both your energy and your wallet!"
+    ],
+    "cta": "Share this with someone entering their 60s!",
+    "hashtags": "#SeniorHealth #HealthSavings #CareFree #MoneyWisdom",
+    "posted": false
+  },
+  {
+    "id": 23,
+    "age_group": "61-70",
+    "title": "The 3-Bucket Plan for Peaceful Golden Years",
+    "hook": "In your 60s, steady monthly cash feels much nicer than risky roller-coaster rides.",
+    "points": [
+      "Bucket 1 holds cash for this year's groceries, gifts, and fun trips.",
+      "Bucket 2 holds safe fixed deposits that unlock one by one over the next few years.",
+      "Bucket 3 grows quietly in the background for 10 years from now!"
+    ],
+    "cta": "Follow for easy money tips from age 10 to 80!",
+    "hashtags": "#BucketPlan #PeacefulRetirement #SeniorFinance #SimpleSteps",
+    "posted": false
+  },
+  {
+    "id": 24,
+    "age_group": "61-70",
+    "title": "Spotting Tricky Phone & Message Scams",
+    "hook": "If a stranger on the phone rushes you or promises magic money, hang up right away!",
+    "points": [
+      "Real banks NEVER ask for your secret PIN or one-time password over the phone.",
+      "Always pause and chat with a trusted family member before sending money to anyone new.",
+      "Turn on text alerts so your phone tells you every time a coin leaves your account."
+    ],
+    "cta": "Share this to keep your parents and grandparents safe!",
+    "hashtags": "#StaySafe #ScamAlert #SeniorSafety #ProtectYourMoney",
+    "posted": false
+  },
+  {
+    "id": 25,
+    "age_group": "71-80",
+    "title": "Making Money Super Simple in Your 70s",
+    "hook": "In your 70s, the best gift you can give yourself is keeping your money neat and tidy!",
+    "points": [
+      "Gather scattered bank accounts into just one or two easy-to-check places.",
+      "Set light, water, and phone bills to pay themselves automatically so you never have to worry.",
+      "Write a neat one-page list of your accounts and keep it in a safe drawer at home."
+    ],
+    "cta": "Save this tidy-up checklist!",
+    "hashtags": "#SimpleLiving #70sFinance #TidyMoney #GoldenYears",
+    "posted": false
+  },
+  {
+    "id": 26,
+    "age_group": "71-80",
+    "title": "Writing a Kind Map for Your Family",
+    "hook": "Writing a clear will is like leaving a helpful treasure map so your family never has to guess.",
+    "points": [
+      "Make sure every bank account has a trusted family member's name listed on it.",
+      "Write a simple, clear will saying who gets what—it prevents arguments and confusion.",
+      "Check your map every few years to make sure nothing changed."
+    ],
+    "cta": "Follow for our full 10-to-80 finance series!",
+    "hashtags": "#FamilyCare #WillPlanning #PeaceOfMind #LegacyLove",
+    "posted": false
+  },
+  {
+    "id": 27,
+    "age_group": "71-80",
+    "title": "Spending on Joy Without Feeling Guilty",
+    "hook": "You worked and saved your whole life—your 70s are meant for enjoying those apples!",
+    "points": [
+      "Make a special 'Smile Budget' for gardening, grandkids' ice cream, or cozy trips.",
+      "Spend freely on things that make your home comfy and safe.",
+      "Money is meant to buy warm memories, not just sit quietly in a notebook!"
+    ],
+    "cta": "What's one fun thing you'd love to do in your 70s?",
+    "hashtags": "#RetirementJoy #SmileBudget #GoldenYears #LifeLessons",
+    "posted": false
+  },
+  {
+    "id": 28,
+    "age_group": "71-80",
+    "title": "Sharing Money Stories with Your Grandkids",
+    "hook": "The sweetest gift for your grandkids isn't just a toy—it's teaching them how money works!",
+    "points": [
+      "Tell them funny stories about your first piggy bank or smartest money choice.",
+      "Gift them a tiny savings bond or seed investment alongside their birthday card.",
+      "Show them that patience and kindness are the real secrets to wealth!"
+    ],
+    "cta": "Follow to catch every episode from age 10 to 80!",
+    "hashtags": "#Grandparents #MoneyStories #GenerationalLove #FinancialWisdom",
+    "posted": false
+  }
+]
